@@ -1,0 +1,90 @@
+@import "../../common.css";
+
+.contentBox {
+    background-color: var(--content-background);
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 1em auto;
+    width: 75%;
+    filter: drop-shadow(0.3em 0.3em 0.2em #666666);
+    border: 0.2em solid var(--primary-dark);
+}
+
+hr {
+    border: 1px solid var(--primary-light);
+}
+
+.contentBox ul {
+    list-style-type: square;
+    
+}
+
+.moveOver {
+    display: inline;
+}
+
+.innerContent {
+    margin: 1em 0em;
+}
+
+.innerContent img {
+    width: 4em;
+}
+
+.innerContent p {
+    max-width: 65ch;
+    line-height: 1.1em;
+}
+
+.innerContent li {
+    max-width: 65ch;
+    line-height: 1.1em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: fit-content(5em) 1fr;
+    align-items: top;
+}
+
+.col {
+    padding-left: 0.5em;
+}
+
+.date {
+    font-style: italic;
+    color: var(--text-mid-dark);
+}
+
+ul {
+    list-style-position: outside;
+    margin-left: 1em;
+}
+
+li::marker {
+    color: var(--primary-dark);
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .moveOver {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentBox {
+        width: 95%;
+    }
+}

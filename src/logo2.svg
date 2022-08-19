@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1025"
+   height="400"
+   viewBox="0 0 271.19792 105.83333"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/home/alex/Documents/alaevens.ca/src/components/NavBar/icon.png"
+   inkscape:export-xdpi="30"
+   inkscape:export-ydpi="30"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logo2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     inkscape:zoom="1.466344"
+     inkscape:cx="711.29285"
+     inkscape:cy="228.45935"
+     inkscape:window-width="1920"
+     inkscape:window-height="995"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid824"
+       spacingx="1.3229167"
+       spacingy="1.3229167" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6212">
+      <stop
+         style="stop-color:#0060b3;stop-opacity:1"
+         offset="0"
+         id="stop6208" />
+      <stop
+         style="stop-color:#00325d;stop-opacity:1"
+         offset="1"
+         id="stop6210" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4797"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#00b8bd;stop-opacity:1;"
+         offset="0"
+         id="stop4795" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6212"
+       id="linearGradient6214"
+       x1="165.36459"
+       y1="19.84375"
+       x2="165.36459"
+       y2="85.989586"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(6.6145895)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 0,6.6145835 H 6.6145835 V 0 L 264.58334,1.5e-6 V 6.614585 h 6.61458 v 92.604167 h -6.61458 v 6.614578 l -257.9687565,0 V 99.218751 H 0 Z"
+       id="path7952"
+       sodipodi:nodetypes="ccccccccccccc" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path1028"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 59.531259,92.60417 v 6.614583 H 99.218758 V 92.60417 Z M 13.229174,6.6145845 H 26.45834 L 72.760425,52.91667 26.45834,99.218752 H 13.229174 L 59.531259,52.91667 Z" />
+    <path
+       id="path1969"
+       style="fill:url(#linearGradient6214);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.5875;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 224.89584,85.989587 V 59.531252 h 6.61458 l 1e-5,-6.614581 h 6.61458 v -6.614586 h -6.61458 l -1e-5,-6.614585 h -6.61459 l 1e-5,-19.843748 h 6.61459 l -1e-5,13.229165 h 6.61458 l 1e-5,6.614585 h 6.61458 l -1e-5,-6.614584 h 6.61459 l 1e-5,-13.229166 h 6.61458 l -10e-6,19.843748 h -6.61458 l 1e-5,6.614585 h -6.61459 v 6.614586 h 6.61459 l -1e-5,6.614581 h 6.61458 l 10e-6,26.458335 h -6.61458 V 66.145835 h -6.61459 v -6.614581 h -6.61458 v 6.614581 h -6.61459 l 1e-5,19.843752 z m -46.30208,0 V 19.843752 h 33.07292 v 6.614583 h -26.45834 v 19.843752 h 13.22917 v 6.614583 h -13.22917 v 26.458334 h 26.45834 v 6.614583 z M 132.29167,19.843752 v 66.145835 h 33.07292 V 79.375004 H 138.90626 V 19.843752 Z m -39.687498,0 v 6.614583 h -6.614583 v 59.531249 h 6.614583 V 52.916668 h 19.843748 v 33.072916 h 6.61459 V 26.458335 h -6.61459 v -6.614583 z m 0,13.229166 H 112.44792 V 46.302085 H 92.604172 Z"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>

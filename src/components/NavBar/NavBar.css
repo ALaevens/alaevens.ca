@@ -1,0 +1,51 @@
+@import "../../common.css";
+
+nav {
+    display: block;
+    background-color: var(--primary);
+    border-bottom: 0.2em solid var(--primary-dark);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    /* border-top: 0.2em solid var(--primary-dark); */
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.8em 0.5em;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--primary-light);
+    text-shadow: 0.1em 0.1em #333333;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: var(--primary-dark);
+    text-shadow: 0.1em 0.1em black;
+    
+}
+
+nav img {
+    height: 2.25em;
+    vertical-align: middle;
+    padding: 0em 1em;
+}
+
+.vl {
+    display: inline-block;
+    border-left: 4px solid var(--primary-dark);
+    height: 2em;
+    vertical-align: middle;
+    transform: translateX(-2px);
+}
+
+@media only screen and (max-width: 600px) {
+    nav img {
+        display: none;
+    }    
+}
