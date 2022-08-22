@@ -1,0 +1,19 @@
+@import "../../common.css";
+
+.innerContent {
+    margin: 1em 0em;
+}
+
+.innerContent img {
+    width: 4em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: fit-content(5em) 1fr;
+    align-items: top;
+}
+
+.col {
+    padding-left: 0.5em;
+}

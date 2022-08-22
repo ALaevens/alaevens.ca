@@ -11,13 +11,14 @@ export const education = [
         dates: ["September 2018", "June 2022"],
         description: "Graduated with a BSc Honours in Computing Science",
         image: ualberta,
-        hiddenDetails: {
+        hiddenList: {
             title: "Key Courses",
             content: [
                 {heading: "CMPUT 401", details: "Software Process and Product Management"},
                 {heading: "CMPUT 412", details: "Experimental Mobile Robotics"},
                 {heading: "CMPUT 481", details: "Parallel and Distributed Systems"},
-                {heading: "CMPUT 379", details: "Operating Systems Concepts"}
+                {heading: "CMPUT 379", details: "Operating Systems Concepts"},
+                {heading: "CMPUT 391", details: "Database Management Systems"}
             ]
         }
     },
@@ -32,8 +33,8 @@ export const education = [
 
 export const work = [
     {
-        title: "Latandao Backend Programmer",
-        location: "CMPUT 401",
+        title: "Backend Programmer",
+        location: "CMPUT 401 - Latandao App",
         dates: ["January 2022", "April 2022"],
         description: "Worked with a team of four others to build an app for local Edmonton community group 'La Connexional'. " + 
                      "While CMPUT 401 is a credited university course, The client was real and so is the final product.",
@@ -59,4 +60,32 @@ export const work = [
         list: ["Filling and facing shelves", "Packing groceries", "Assisting customers", "Training new employees"],
         image: iga
     },
+]
+
+export const skills = [
+    {
+        subject: "Programming/Scripting Languages",
+        content: [
+            "Python", "Java", "C++", "JavaScript", "HTML", "CSS", "SQL"
+        ]
+    },
+    {
+        subject: "Backend Technologies",
+        content: [
+            "Django", "REST APIs", "Docker", "Docker-Compose", "Nginx", "Linux", "MySQL", "SQLite"
+        ]
+    },
+    {
+        subject: "Frontend Technologies",
+        content: [
+            "React", "Flutter", "Redux"
+        ]
+    },
+    {
+        subject: "Tools",
+        content: [
+            "Git", "Swagger API Documentation", "Postman", "ReadTheDocs", "Pytest", "JUnit", "GDB + Valgrind",
+            "Jetbrains Software", "Android Studio", "Visual Studio + VS Code"
+        ]
+    }
 ]

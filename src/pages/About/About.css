@@ -23,32 +23,9 @@ hr {
     display: inline;
 }
 
-.innerContent {
-    margin: 1em 0em;
-}
-
-.innerContent img {
-    width: 4em;
-}
-
-.innerContent p {
+p, li {
     max-width: 65ch;
     line-height: 1.1em;
-}
-
-.innerContent li {
-    max-width: 65ch;
-    line-height: 1.1em;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: fit-content(5em) 1fr;
-    align-items: top;
-}
-
-.col {
-    padding-left: 0.5em;
 }
 
 .date {
@@ -65,16 +42,9 @@ li::marker {
     color: var(--primary-dark);
 }
 
-h1 {
-    font-size: 2.125rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-h4 {
-    font-size: 1.25rem;
+.skillList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 600px) {

@@ -7,10 +7,10 @@ export default function AccordionDiv(props) {
     console.log(active);
     
     return (
-        <div>
+        <div className="accordion">
             <button className={active ? "collapseButton active" : "collapseButton"} onClick={() => setActive(prev => !prev)}>
-                <h4>{props.title}</h4>
-                <h4 className="arrow">&#65088;</h4>
+                <h5>{props.title}</h5>
+                <h5 className="arrow">&#65088;</h5>
             </button>
             <div className={active ? "content active" : "content"}>
                 {props.children}
