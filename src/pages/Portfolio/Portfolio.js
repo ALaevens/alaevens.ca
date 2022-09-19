@@ -26,6 +26,7 @@ export default function Portfolio() {
                 <h1>This Website</h1>
                 <p className="date">Summer 2022</p>
                 <hr />
+                <a href="https://github.com/ALaevens/alaevens.ca">Source (GitHub)</a>
                 <p className="description">
                 I built this website to serve two purposes. The first was to act as an easily accessible place to host my resume while having more freedom with the
                  design than a traditional resume. The second was to provide an incentive to practice my web development skills which I had neglected to learn 
@@ -56,8 +57,8 @@ export default function Portfolio() {
                 <h1>Remote Garden Watering App</h1>
                 <p className="date">Summer 2020</p>
                 <hr/>
-                <a href="https://github.com/ALaevens/RaspiSocketServer">Github (Server)</a>
-                <a href="https://github.com/ALaevens/RelayClient">Github (Client)</a>
+                <a href="https://github.com/ALaevens/RaspiSocketServer">Server Source (GitHub)</a>
+                <a href="https://github.com/ALaevens/RelayClient">Client Source (GitHub)</a>
                 <p className="description">
                 This is a project I worked on to practice what I had learned from CMPUT 301. The app was written in Java using the Android platform tools.
                 The server was a simple server written in python running on a Raspberry Pi that communicates over sockets. Were I to do this project again, I would <i>not</i> write it this way.
