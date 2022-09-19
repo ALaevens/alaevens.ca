@@ -18,7 +18,8 @@ export const education = [
                 {heading: "CMPUT 412", details: "Experimental Mobile Robotics"},
                 {heading: "CMPUT 481", details: "Parallel and Distributed Systems"},
                 {heading: "CMPUT 379", details: "Operating Systems Concepts"},
-                {heading: "CMPUT 391", details: "Database Management Systems"}
+                {heading: "CMPUT 391", details: "Database Management Systems"},
+                {heading: "CMPUT 301", details: "Introduction to Software Engineering"}
             ]
         }
     },
@@ -34,7 +35,7 @@ export const education = [
 export const work = [
     {
         title: "Backend Programmer",
-        location: "CMPUT 401 - Latandao App",
+        location: "CMPUT 401 - LaTandao App",
         dates: ["January 2022", "April 2022"],
         description: "Worked with a team of four others to build an app for local Edmonton community group 'La Connexional'. " + 
                      "While CMPUT 401 is a credited university course, The client was real and so is the final product.",

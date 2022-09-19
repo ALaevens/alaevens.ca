@@ -37,6 +37,19 @@ h5 {
   font-size: 1.25rem;
 }
 
+p, li {
+  max-width: 85ch;
+  line-height: 1.1em;
+}
+
+hr {
+  border: 1px solid var(--primary-light);
+}
+
+ul {
+  list-style-position: outside;
+  margin-left: 1em;
+}
 
 @media (max-width: 1000px) {
   html {

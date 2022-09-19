@@ -3,8 +3,6 @@ import "./AccordionDiv.css";
 
 export default function AccordionDiv(props) {
     const [active, setActive] = useState(false);
-
-    console.log(active);
     
     return (
         <div className="accordion">

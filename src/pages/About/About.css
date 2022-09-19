@@ -1,41 +1,12 @@
-@import "../../common.css";
-
-.contentBox {
-    background-color: var(--content-background);
-    padding: 0.5em;
-    border-radius: 1em;
-    margin: 1em auto;
-    width: 75%;
-    filter: drop-shadow(0.3em 0.3em 0.2em #666666);
-    border: 0.2em solid var(--primary-dark);
-}
-
-hr {
-    border: 1px solid var(--primary-light);
-}
-
-.contentBox ul {
-    list-style-type: square;
-    
-}
+@import "../../common.css"; 
 
 .moveOver {
     display: inline;
 }
 
-p, li {
-    max-width: 65ch;
-    line-height: 1.1em;
-}
-
 .date {
     font-style: italic;
     color: var(--text-mid-dark);
-}
-
-ul {
-    list-style-position: outside;
-    margin-left: 1em;
 }
 
 li::marker {
@@ -47,14 +18,26 @@ li::marker {
     grid-template-columns: 1fr 1fr;
 }
 
+.mediaLink {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--text-mid-light);
+    padding: 0.2em 0.4em;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.mediaLink img {
+    width: 2em;
+    height: 2em;
+    padding-right: 0.3em;
+}
+
 @media (max-width: 600px) {
     .moveOver {
         display: block;
-    }
-}
-
-@media (max-width: 768px) {
-    .contentBox {
-        width: 95%;
     }
 }
