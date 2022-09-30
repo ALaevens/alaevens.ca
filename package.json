@@ -15,6 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "rsync -r build/ /var/www/alaevens.ca",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

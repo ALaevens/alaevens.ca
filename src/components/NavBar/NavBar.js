@@ -7,7 +7,7 @@ export default function NavBar() {
         <nav>
             <img src={icon} alt=""/>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/about-me">About Me</NavLink>
+            <NavLink to="/about-me">Resume</NavLink>
             <NavLink to="/portfolio">Portfolio</NavLink>
         </nav>
     );

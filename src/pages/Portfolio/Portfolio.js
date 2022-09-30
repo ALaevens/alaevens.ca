@@ -28,9 +28,9 @@ export default function Portfolio() {
                 <hr />
                 <a href="https://github.com/ALaevens/alaevens.ca">Source (GitHub)</a>
                 <p className="description">
-                I built this website to serve two purposes. The first was to act as an easily accessible place to host my resume while having more freedom with the
-                 design than a traditional resume. The second was to provide an incentive to practice my web development skills which I had neglected to learn 
-                 while in University. To add to the challenge, I decided I would create the website in pure ReactJS without assistance from any additional 
+                This website was built to serve two purposes. The first was to act as an easily accessible place to host my resume while having more freedom with the
+                 design than a traditional resume template. The second was to provide an incentive to practice web development skills which were not a focus of my university classes. 
+                 To add to the challenge, I decided I would create the website in pure ReactJS without assistance from any additional 
                  UI libraries such as react-bootstrap or material-ui. This site is currently self-hosted on my own home server using Nginx and the latest 
                  Ubuntu LTS release.
                 </p>
@@ -45,10 +45,12 @@ export default function Portfolio() {
                 <p className="description">
                 LaTandao is an app I helped build as part of the CMPUT 401 course at the University of Alberta. CMPUT 401 is a project-based course which aims to teach 
                 the software development process and project management by having the students build real world applications. My group was given the task of building 
-                an app for La Connexional a local Edmonton event organizing group. They had a rough idea of an app which would allow users to view events and products 
-                that businesses could promote on the platform. I mainly contributed to this project through my work on the backend. The backend uses Django with the 
-                Django Rest Framework to serve content to the Flutter App. I also wrote the backend for the chat function and a primitive flutter chat frontend which 
-                became the backbone of the current chat page in the frontend.
+                an app for La Connexional, a local Edmonton event organizing group. They had a preliminary concept for an app which would allow users to view events and products 
+                that businesses could promote on the platform. I mainly contributed to this project through my work on the backend. The backend is built with Django and MySQL
+                and serves content to the app with a REST API. I also wrote the backend for the chat function using Django channels which is socket based with a Redis cache so that the chat
+                experience is responsive. The messages are regularly saved from the redis cache to the MySQL database so that messages which arrived when a user was not logged in are
+                still preserved. Due to rapidly approaching deadlines, I taught myself Flutter and Dart so that I could build a standalone chat application which was incorperated into
+                the app as the chat tab by the frontend team.
                 </p>
                 {["python", "django", "flutter", "nginx", "mysql", "redis", "docker"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
             </ContentBox>
@@ -60,9 +62,11 @@ export default function Portfolio() {
                 <a href="https://github.com/ALaevens/RaspiSocketServer">Server Source (GitHub)</a>
                 <a href="https://github.com/ALaevens/RelayClient">Client Source (GitHub)</a>
                 <p className="description">
-                This is a project I worked on to practice what I had learned from CMPUT 301. The app was written in Java using the Android platform tools.
-                The server was a simple server written in python running on a Raspberry Pi that communicates over sockets. Were I to do this project again, I would <i>not</i> write it this way.
-                I would instead communicate with some form of REST API since the sockets made the connection too fragile for a mobile app. 
+                This is a project I developed to practice what I had learned from CMPUT 301. The app was written in Java using the Android platform tools.
+                The server was a simple server written in python running on a Raspberry Pi that communicated over sockets to turn relays on and off. These relays 
+                were then wired into solenoid valves so that I could turn sprinkers on and off using the Android app. Were I to do this project again, I would <i>not</i> write it this way.
+                I would instead communicate with some form of REST API since the sockets made the connection too fragile for a mobile app. As it was, the project was a success and allowed for
+                myself and my family to water the gardens from 200km away. 
                 </p>
                 {["python", "androidstudio", "java", "raspberrypi"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
             </ContentBox>
