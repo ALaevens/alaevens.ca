@@ -2,19 +2,13 @@
     background-color: var(--content-background);
     padding: 0.5em;
     border-radius: 1em;
-    margin: 1em auto;
-    width: 70%;
+    margin: 0.5em auto;
     filter: drop-shadow(0.3em 0.3em 0.2em #666666);
     border: 0.2em solid var(--primary-dark);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .contentBox ul {
-    list-style-type: square;
-    
-}
-
-@media (max-width: 768px) {
-    .contentBox {
-        width: 95%;
-    }
+    list-style-type: square; 
 }

@@ -1,7 +1,14 @@
 @import "../../common.css"; 
 
-.gridContainer {
+.mainGrid {
     display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    gap: 0em 1em;
+}
+
+.titleCard {
+    display: grid;
+    grid-area: 1 / 1 / span 1 / span 2;
     grid-template: 1fr / 1fr 3fr;
 }
 
@@ -28,27 +35,33 @@
 
 .right h1 {
     font-size: 4rem;
+    font-family: 'Staatliches', cursive;
 }
 
 .right hr {
-    border: 0.5em inset var(--primary-light);
+    border: 0.3em inset var(--primary-light);
+    background-color: var(--primary-light);
 }
 
 @media (max-width: 768px) {
-    .gridContainer {
+    .titleCard {
         display: flex;
         flex-direction: column-reverse;
+        grid-area: 1 / 1 / span 1 / span 1;
     }
 
     .left img {
         width: 70vw;
     }
+
+    .mainGrid {
+        grid-template: auto auto auto / 1fr;
+    }
 }
 
 @media (max-width: 600px) {
     .right h1 {
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 2.5rem;
     }
 
     .right h2 {

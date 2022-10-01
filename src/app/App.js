@@ -10,11 +10,13 @@ function App() {
     <Router>
       <NavBar />
       <main>
-        <Routes>
-          <Route path="/about-me" element={<About />}/>
-          <Route path="/portfolio" element={<Portfolio />}/>
-          <Route path="/" element={<Home />}/>
-        </Routes>
+        <div className='contentArea'>
+          <Routes>
+            <Route path="/about-me" element={<About />}/>
+            <Route path="/portfolio" element={<Portfolio />}/>
+            <Route path="/" element={<Home />}/>
+          </Routes>
+        </div>
       </main>
     </Router>
   );

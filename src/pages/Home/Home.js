@@ -10,25 +10,33 @@ const mediaIcons = {
 
 export default function Home(props) {
     return (
-        <div>
-            <ContentBox>
-                <div className="gridContainer">
-                    <div className="left">
-                        <img src={nobg} alt="Me"/>
+        <div className="mainGrid">
+            <ContentBox className="titleCard">
+                <div className="left">
+                    <img src={nobg} alt="Me"/>
+                </div>
+                <div className="right">
+                    <div>
+                        <h1>Alexander Laevens</h1>
+                        <h2>Junior Software Developer</h2>
+                        <h5><i>Looking for work</i></h5>
+                        <hr />
                     </div>
-                    <div className="right">
-                        <div>
-                            <h1>Alexander Laevens</h1>
-                            <h2>Junior Software Developer</h2>
-                            <h5><i>Looking for work</i></h5>
-                            <hr />
-                        </div>
-                        <div>
-                            <MediaLink icon={mediaIcons.github} text="alaevens" link="https://github.com/alaevens"/>
-                            <MediaLink icon={mediaIcons.linkedin} text="Alexander Laevens" link="https://www.linkedin.com/in/alexander-laevens-50a993238/"/>
-                        </div>
+                    <div>
+                        <MediaLink icon={mediaIcons.github} text="alaevens" link="https://github.com/alaevens"/>
+                        <MediaLink icon={mediaIcons.linkedin} text="Alexander Laevens" link="https://www.linkedin.com/in/alexander-laevens-50a993238/"/>
                     </div>
                 </div>
+            </ContentBox>
+            <ContentBox>
+                <h1>Box 1</h1>
+                <hr />
+                <p>Test Box 1 content</p>
+            </ContentBox>
+            <ContentBox>
+            <h1>Box 2</h1>
+            <hr />
+            <p>Test Box 2 content</p>
             </ContentBox>
         </div>
     );

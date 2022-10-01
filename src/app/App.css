@@ -2,11 +2,20 @@
 
 html {
   font-size: 18px;
+  transition: font-size 0.5s cubic-bezier(0.45, 0, 0.55, 1);
   background-color: var(--background);
 }
 
 main {
   margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .contentArea {
+  width: min(calc(100% - 1em), 60em);
+  /* transition: width 0.5s cubic-bezier(0.45, 0, 0.55, 1); */
 }
 
 strong {
@@ -54,5 +63,6 @@ ul {
 @media (max-width: 1000px) {
   html {
     font-size: 16px;
+    transition: font-size 0.5s cubic-bezier(0.45, 0, 0.55, 1);
   }
 }

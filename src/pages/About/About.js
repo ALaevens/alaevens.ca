@@ -39,8 +39,10 @@ export default function About() {
                 <p>
                     Contact information is limited due to being a public site. Initiate contact by email to connect on another platform not listed here.
                 </p>
-                <MediaLink icon={mediaIcons.gmail} text="alaevens@ualberta.ca" link="mailto:alaevens@ualberta.ca"/>
-                <MediaLink icon={mediaIcons.linkedin} text="Alexander Laevens" link="https://www.linkedin.com/in/alexander-laevens-50a993238/"/>
+                <div>
+                    <MediaLink icon={mediaIcons.gmail} text="alaevens@ualberta.ca" link="mailto:alaevens@ualberta.ca"/>
+                    <MediaLink icon={mediaIcons.linkedin} text="Alexander Laevens" link="https://www.linkedin.com/in/alexander-laevens-50a993238/"/>
+                </div>
             </ContentBox>
 
             <ContentBox>

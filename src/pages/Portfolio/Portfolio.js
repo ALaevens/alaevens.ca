@@ -34,7 +34,9 @@ export default function Portfolio() {
                  UI libraries such as react-bootstrap or material-ui. This site is currently self-hosted on my own home server using Nginx and the latest 
                  Ubuntu LTS release.
                 </p>
-                {["html", "css", "javascript", "react", "nginx", "ubuntu"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                <div>
+                    {["html", "css", "javascript", "react", "nginx", "ubuntu"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                </div>
             </ContentBox>
 
             <ContentBox>
@@ -52,7 +54,9 @@ export default function Portfolio() {
                 still preserved. Due to rapidly approaching deadlines, I taught myself Flutter and Dart so that I could build a standalone chat application which was incorperated into
                 the app as the chat tab by the frontend team.
                 </p>
-                {["python", "django", "flutter", "nginx", "mysql", "redis", "docker"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                <div>
+                    {["python", "django", "flutter", "nginx", "mysql", "redis", "docker"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                </div>
             </ContentBox>
 
             <ContentBox>
@@ -68,7 +72,9 @@ export default function Portfolio() {
                 I would instead communicate with some form of REST API since the sockets made the connection too fragile for a mobile app. As it was, the project was a success and allowed for
                 myself and my family to water the gardens from 200km away. 
                 </p>
-                {["python", "androidstudio", "java", "raspberrypi"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                <div>
+                    {["python", "androidstudio", "java", "raspberrypi"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                </div>
             </ContentBox>
         </div>
     );
