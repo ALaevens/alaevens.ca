@@ -8,6 +8,7 @@
     border: 0.2em solid var(--primary-light);
     cursor: pointer;
     margin-right: 1em;
+    font-weight: bold;
 }
 
 .mediaLink img {

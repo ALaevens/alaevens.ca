@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="150mm"
+   viewBox="0 0 210 150"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="code.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="66.234486"
+     inkscape:cy="355.36418"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-147)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:5.19446754px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.1298617;"
+       x="-14.710965"
+       y="100.47092"
+       id="text817"
+       transform="rotate(-3.027605)"><tspan
+         sodipodi:role="line"
+         id="tspan815"
+         x="-14.710965"
+         y="100.47092"
+         style="stroke-width:0.1298617;fill:#666666;">	std::string replyStr;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="106.96401"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan819">	int n;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="113.45709"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan821">	int transactions=0;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="119.95018"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan823">	while(!std::getline(std::cin, toSend).eof()) { // get line of input		</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="126.44326"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan825">		if (toSend[0] == 'T') { // handle transaction request</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="132.93634"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan827">			// Log command to file</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="139.42943"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan829">			file &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; getTime() &lt;&lt; &quot;: &quot;;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="145.9225"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan831">			file &lt;&lt; &quot;Send (T&quot; &lt;&lt; std::setw(3) &lt;&lt; stoi(toSend.substr(1)) &lt;&lt; &quot;)\n&quot;; </tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="152.41559"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan833">			// Send command to server</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="158.90868"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan835">			if( send(sock, toSend.c_str(), toSend.length(), 0) &lt; 0) {</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="165.40176"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan837">				file &lt;&lt; &quot;Send Failed\n&quot;;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="171.89485"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan839">				break;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="178.38792"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan843">			}</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="184.88101"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan1694" /><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="191.3741"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan845">			// Receive a reply from the server</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="197.86719"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan847">			memset(server_reply, 0, 1000);</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="204.36026"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan849">			if( recv(sock, server_reply, 1000, 0) &lt; 0) {</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="210.85335"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan851">				file &lt;&lt; &quot;Receive failed\n&quot;;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="217.34644"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan853">				break;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="223.83952"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan855">			}</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="230.33261"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan857">			// log reply from server</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="236.82568"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan859">			replyStr = server_reply;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="243.31877"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan861">			file &lt;&lt; std::fixed &lt;&lt; std::setprecision(2) &lt;&lt; getTime() &lt;&lt; &quot;: &quot;;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="249.81186"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan863">			file &lt;&lt; &quot;Recv (D&quot; &lt;&lt; std::setw(3) &lt;&lt; stoi(replyStr.substr(1)) &lt;&lt; &quot;)\n&quot;;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="256.30496"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan865">			transactions++;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="262.79803"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan867">		} else if (toSend[0] == 'S') { // handle Sleep request</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="269.29111"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan869">			n = stoi(toSend.substr(1));</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="275.78421"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan871">			file &lt;&lt; &quot;Sleep &quot; &lt;&lt; n &lt;&lt; &quot; units&quot; &lt;&lt; std::endl;</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="282.27728"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan873">			Sleep(n);</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="288.77036"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan877">		}</tspan><tspan
+         sodipodi:role="line"
+         x="-14.710965"
+         y="295.26346"
+         style="stroke-width:0.1298617;fill:#666666;"
+         id="tspan879">	}</tspan></text>
+  </g>
+</svg>
