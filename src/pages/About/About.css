@@ -16,10 +16,22 @@ li::marker {
 .skillList {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0em 1em;
+}
+
+.contactCard .linkArea {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    gap: 0.5em;
 }
 
 @media (max-width: 600px) {
     .moveOver {
         display: block;
+    }
+
+    .skillList {
+        grid-template-columns: 1fr;
     }
 }

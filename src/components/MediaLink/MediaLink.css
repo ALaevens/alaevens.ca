@@ -1,5 +1,5 @@
 .mediaLink {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     background-color: white;
     padding: 0.2em 0.4em;
@@ -7,8 +7,15 @@
     border-radius: 0.5em;
     border: 0.2em solid var(--primary-light);
     cursor: pointer;
-    margin-right: 1em;
     font-weight: bold;
+}
+
+.mediaLink:hover {
+    border: 0.2em solid var(--primary-dark)
+}
+
+.mediaLink:hover p {
+    text-decoration: underline;
 }
 
 .mediaLink img {

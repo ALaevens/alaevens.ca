@@ -33,13 +33,13 @@ const mediaIcons = {
 export default function About() {
     return (
         <div>
-            <ContentBox>
+            <ContentBox className="contactCard">
                 <h1>Contact</h1>
                 <hr />
                 <p>
                     Contact information is limited due to being a public site. Initiate contact by email to connect on another platform not listed here.
                 </p>
-                <div>
+                <div className="linkArea">
                     <MediaLink icon={mediaIcons.gmail} text="alaevens@ualberta.ca" link="mailto:alaevens@ualberta.ca"/>
                     <MediaLink icon={mediaIcons.linkedin} text="Alexander Laevens" link="https://www.linkedin.com/in/alexander-laevens-50a993238/"/>
                 </div>
