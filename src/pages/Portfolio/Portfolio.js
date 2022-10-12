@@ -52,10 +52,10 @@ export default function Portfolio() {
                 and serves content to the app with a REST API. I also wrote the backend for the chat function using Django channels which is socket based with a Redis cache so that the chat
                 experience is responsive. The messages are regularly saved from the redis cache to the MySQL database so that messages which arrived when a user was not logged in are
                 still preserved. Due to rapidly approaching deadlines, I taught myself Flutter and Dart so that I could build a standalone chat application which was incorperated into
-                the app as the chat tab by the frontend team.
+                the app as the chat tab by the frontend team. The backend was deployed to a cloud instance of Ubuntu 20.04.
                 </p>
                 <div>
-                    {["python", "django", "flutter", "nginx", "mysql", "redis", "docker"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                    {["python", "django", "flutter", "nginx", "mysql", "redis", "docker", "ubuntu"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
                 </div>
             </ContentBox>
 
