@@ -30,10 +30,12 @@ nav a.active {
     
 }
 
-nav img {
-    height: 2.25em;
-    vertical-align: middle;
-    padding: 0em 1em;
+nav h5 {
+    display: inline;
+    padding: 0.8em 0.5em; 
+    font-weight: bold;
+    color: var(--text-light);
+    text-shadow: 0.1em 0.1em black;
 }
 
 .vl {
@@ -45,7 +47,17 @@ nav img {
 }
 
 @media only screen and (max-width: 600px) {
-    nav img {
+    nav h5 {
         display: none;
-    }    
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav a:hover:not(.active)::before {
+        content: "./";
+    }
+    
+    nav a:hover:not(.active)::after {
+        content: ".sh";
+    }
 }
