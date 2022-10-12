@@ -10,20 +10,20 @@
     justify-content: space-between;
     padding: 0.5em;
     margin-top: 0.5em;
-    transition: background-color 0.4s ease, border-radius 0.25s ease 0.4s;
+    transition: background-color 0.4s ease, border-radius 0.2s ease 0.2s;
     border-radius: 1em;
 }
 
 .collapseButton.active {
     background-color: var(--text-mid-dark);
     color: var(--text-light);
-    transition: background-color 0.4s ease, border-radius 0.25s;
+    transition: background-color 0.4s ease, border-radius 0.2s;
     border-radius: 1em 1em 0em 0em;
 }
 
 .collapseButton .arrow {
     transform: rotate(-90deg);
-    transition: transform 0.65s ease;
+    transition: transform 0.4s ease;
 }
 
 .collapseButton.active .arrow {
@@ -32,7 +32,7 @@
 
 .collapseButton h4 {
     color: var(--text-dark);
-    transition: transform 0.4s ease, color 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 .collapseButton.active h4 {
@@ -43,14 +43,14 @@
     background-color: var(--background);
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s linear, padding 0.4s;
+    transition: max-height 0.2s linear, padding 0.2s;
     border-radius: 0em 0em 1em 1em;
     padding: 0em 0.5em;
     
 }
 
 .content.active {
-    max-height: 20em;
+    max-height: 40em;
     padding: 0.5em 0.5em;
-    transition: max-height 0.4s linear 0.25s, padding 0.4s linear 0.25s;
+    transition: max-height 0.2s linear 0.2s, padding 0.2s linear 0.2s;
 }

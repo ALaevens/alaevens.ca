@@ -101,12 +101,12 @@ export default function Home(props) {
                 })}
             </ContentBox>
             <ContentBox>
-                <h1>Courses</h1>
+                <h1>Courses Taken</h1>
                 <hr />
 
                 {Object.keys(courses).map(subject => {
                     return <AccordionDiv title={subject}>
-                        <ul>
+                        {/* <ul>
                             {courses[subject].map(entry => {
                                 return (
                                     <li>
@@ -117,7 +117,17 @@ export default function Home(props) {
                                     </li>
                                 );
                             })}
-                        </ul>
+                        </ul> */}
+                        <div className="courseListing">
+                            {courses[subject].map(entry => {
+                                return (
+                                    <>
+                                        <p className="courseCode"><strong>{entry.heading}</strong></p>
+                                        <p>{entry.details}</p>
+                                    </>
+                                );
+                            })}
+                        </div>
                     </AccordionDiv>
                 })}
             </ContentBox>

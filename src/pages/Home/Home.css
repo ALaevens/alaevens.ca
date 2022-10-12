@@ -63,8 +63,19 @@
 .courseListing {
     display: grid;
     grid-template-columns: auto auto;
+    grid-auto-flow: dense;
     column-gap: 0.5em;
     justify-content: left;
+}
+
+.courseListing .courseCode {
+    list-style-type: square;
+    display:list-item;
+    margin-left: 1em;
+}
+
+.courseCode::marker {
+    color: var(--primary-dark);
 }
 
 @media (max-width: 768px) {
