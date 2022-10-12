@@ -2,7 +2,7 @@
 
 .mainGrid {
     display: grid;
-    grid-template: auto auto / 1fr 1fr;
+    grid-template: auto auto / 2fr 3fr;
     gap: 0em 1em;
 }
 
@@ -61,21 +61,30 @@
 }
 
 .courseListing {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-flow: dense;
-    column-gap: 0.5em;
-    justify-content: left;
+    width: 100%;
+}
+
+.courseListing td, th {
+    text-align: left;
+    padding: 0.1em 0.5em;
+    line-height: 1.1em;
 }
 
 .courseListing .courseCode {
-    list-style-type: square;
-    display:list-item;
-    margin-left: 1em;
+    width: 12ex;
+    padding-right: 0;
 }
 
-.courseCode::marker {
-    color: var(--primary-dark);
+.courseListing tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+.accordion.nopad .content {
+    padding: 0 0;
+}
+
+.accordion.nopad .content.active {
+    padding-bottom: 0.5em;
 }
 
 @media (max-width: 768px) {

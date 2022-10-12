@@ -50,7 +50,7 @@
 }
 
 .content.active {
-    max-height: 40em;
+    max-height: 50em;
     padding: 0.5em 0.5em;
     transition: max-height 0.2s linear 0.2s, padding 0.2s linear 0.2s;
 }

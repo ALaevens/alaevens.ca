@@ -101,24 +101,12 @@ export default function Home(props) {
                 })}
             </ContentBox>
             <ContentBox>
-                <h1>Courses Taken</h1>
+                <h1>All Courses Taken</h1>
                 <hr />
 
                 {Object.keys(courses).map(subject => {
-                    return <AccordionDiv title={subject}>
-                        {/* <ul>
-                            {courses[subject].map(entry => {
-                                return (
-                                    <li>
-                                        <div className="courseListing">
-                                            <p><strong>{entry.heading}:</strong></p>
-                                            <p>{entry.details}</p>
-                                        </div>
-                                    </li>
-                                );
-                            })}
-                        </ul> */}
-                        <div className="courseListing">
+                    return <AccordionDiv title={subject} className="nopad">
+                        {/* <div className="courseListing">
                             {courses[subject].map(entry => {
                                 return (
                                     <>
@@ -127,7 +115,17 @@ export default function Home(props) {
                                     </>
                                 );
                             })}
-                        </div>
+                        </div> */}
+                        <table className="courseListing">
+                            {courses[subject].map(entry => {
+                                return (
+                                    <tr>
+                                        <td className="courseCode"><strong>{entry.heading}</strong></td>
+                                        <td className="courseDescription">{entry.details}</td>
+                                    </tr>
+                                );
+                            })}
+                        </table>
                     </AccordionDiv>
                 })}
             </ContentBox>
