@@ -14,7 +14,7 @@ main {
 }
 
 main .contentArea {
-  width: min(calc(100% - 1em), 60em);
+  width: min(calc(100vw - max(0.5em, 5vw)), 60em);
   /* transition: width 0.5s cubic-bezier(0.45, 0, 0.55, 1); */
 }
 
