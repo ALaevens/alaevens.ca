@@ -37,14 +37,11 @@ const courses = {
         {heading: "MATH 214", details: "Intermediate Calculus III"},
         {heading: "MATH 125", details: "Linear Algebra I"},
         {heading: "MATH 115", details: "Elementary Calculus II"},
-        {heading: "MATH 114", details: "Elementary Calculus I"}
-    ],
-
-    "Statistics": [
+        {heading: "MATH 114", details: "Elementary Calculus I"},
         {heading: "STAT 252", details: "Introduction to Applied Statistics II"},
         {heading: "STAT 151", details: "Introduction to Applied Statistics I"}
     ],
-
+    
     "Misc. Science": [
         {heading: "EAS 209", details: "Geology of Western Canada and the National and Provincial Parks"},
         {heading: "EAS 207", details: "Mass Extinctions and Vertebrate Evolution"},

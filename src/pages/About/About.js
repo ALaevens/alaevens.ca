@@ -32,12 +32,12 @@ const mediaIcons = {
 
 export default function About() {
     return (
-        <div>
+        <div className="resumeGrid">
             <ContentBox className="contactCard">
                 <h1>Contact</h1>
                 <hr />
                 <p>
-                    Contact information is limited due to being a public site. Initiate contact by email to connect on another platform not listed here.
+                    More detailed contact information is available by email
                 </p>
                 <div className="linkArea">
                     <MediaLink icon={mediaIcons.gmail} text="alaevens@ualberta.ca" link="mailto:alaevens@ualberta.ca"/>
@@ -45,7 +45,7 @@ export default function About() {
                 </div>
             </ContentBox>
 
-            <ContentBox>
+            <ContentBox className="educationCard">
                 <h1>Education</h1>
                 <hr />
                 {education.map(school => {
@@ -57,7 +57,7 @@ export default function About() {
                 })}
             </ContentBox>
             
-            <ContentBox>
+            <ContentBox className="workCard">
                 <h1>Work Experience</h1>
                 <hr />
                 {work.map(job => {
@@ -69,7 +69,7 @@ export default function About() {
                 })}
             </ContentBox>
 
-            <ContentBox>
+            <ContentBox className="hardSkillCard">
                 <h1>Technical Skills</h1>
                 <hr />
                 {skills.map(skillGroup => {
@@ -79,6 +79,26 @@ export default function About() {
                         </AccordionDiv>
                     );
                 })}
+            </ContentBox>
+
+            <ContentBox className="softSkillCard">
+                <h1>Soft Skills</h1>
+                <hr />
+
+                <p className="skillHeader"><strong>Problem-solving</strong></p>
+                <p>I take great satisfaction from solving problems, and it was one of the driving forces of why I went to school for computer science.</p>
+
+                <p className="skillHeader"><strong>Team Worker</strong></p>
+                <p>In past experience working for the municipality and as a student working on group projects, I have shown myself to be a hardworking and reliable team member. In CMPUT 401 I participated in weekly standup meetings to make sure the group was on track with our goals and to delegate tasks.</p>
+
+                <p className="skillHeader"><strong>Work Ethic</strong></p>
+                <p>I have a strong work ethic, especially in a team setting where I know others are relying on me.</p>
+
+                <p className="skillHeader"><strong>Attention to Detail</strong></p>
+                <p>Given a strict set of program design requirements, I pay attention to details to make sure the requirements are being met.</p>
+
+                <p className="skillHeader"><strong>Adaptability</strong></p>
+                <p>While working for the municipality, I demonstrated adaptability when I had to juggle leading the crew, making plans, and training new hires while still meeting our work targets.</p>
             </ContentBox>
         </div>
     );
