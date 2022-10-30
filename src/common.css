@@ -8,9 +8,21 @@
     --text-dark: #000000;
     --background: #DDDDDD;
     --content-background: #FFFFFF;
+    /* --nav-bg: #283843;
+    --nav-border: black; */
+    --nav-bg: var(--primary);
+    --nav-border: var(--primary-dark);
 }
 
 a {
     padding-top: 0.5em; padding-bottom: 0.5em;
     padding-right: 1em;
 }
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --nav-bg: var(--primary);
+        --nav-border: var(--primary-dark);
+        --background: #DDDDDD;
+    }
+} 

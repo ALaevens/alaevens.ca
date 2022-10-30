@@ -71,8 +71,10 @@
 }
 
 .courseListing .courseCode {
-    width: 12ex;
+    width: 11ex;
     padding-right: 0;
+    font-family: monospace;
+    vertical-align: middle;
 }
 
 .courseListing tr:nth-child(even) {

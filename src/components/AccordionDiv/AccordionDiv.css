@@ -2,7 +2,7 @@
 
 .collapseButton {
     background-color: var(--text-mid-light);
-    border: none;
+    border: 0.15rem inset rgba(0, 0, 0, 0.25);
     width: 100%;
     text-align: left;
     cursor: pointer;
@@ -46,7 +46,8 @@
     transition: max-height 0.2s linear, padding 0.2s;
     border-radius: 0em 0em 1em 1em;
     padding: 0em 0.5em;
-    
+    outline: 0.15rem inset rgba(0, 0, 0, 0.25);
+    outline-offset: -0.15rem;
 }
 
 .content.active {

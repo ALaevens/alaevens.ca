@@ -13,7 +13,7 @@ function App() {
       <main>
         <div className='contentArea'>
           <Routes>
-            <Route path="/about-me" element={<About />}/>
+            <Route path="/resume" element={<About />}/>
             <Route path="/portfolio" element={<Portfolio />}/>
             <Route path="/" element={<Home />}/>
             <Route path="*" element={<NotFound />} />

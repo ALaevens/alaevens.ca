@@ -1,0 +1,19 @@
+.navIcon {
+    display: inline;
+    padding: 0.8em 0.5em;
+    background-color: var(--primary-dark);
+}
+.navIcon h5 {
+    display: inline;
+    padding: 0;
+    font-weight: bold;
+    font-family: monospace;
+    text-shadow: 0 0 0.15em black;
+    /* -webkit-text-stroke: 1px black; */
+}
+
+@media only screen and (max-width: 600px) {
+    .navIcon {
+        display: none;
+    }
+}

@@ -16,12 +16,29 @@ const icons = {
     css: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
     javascript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     react: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    ubuntu: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
+    ubuntu: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg",
+    cpp: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+    sdl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sdl/sdl-plain.svg",
+    cmake: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg",
 };
 
 export default function Portfolio() {
     return (
         <div>
+            <ContentBox>
+                <h1>Cannon Game</h1>
+                <p className="date">Fall 2022</p>
+                <hr />
+                <a href="https://github.com/ALaevens/Cannon-Game-SDL2">Source (GitHub)</a>
+                <a href="https://github.com/ALaevens/Cannon-Game-SDL2/releases">Download Executable</a>
+                <p className="description">
+                I started this project as an opportunity to learn about SDL2, which is a C++ graphics library I have been interested in for quite some time. The game itself is a remake of a game I made in high school using Pygame. Remaking a game instead of trying to make a new one allowed me to focus fully on working with SDL2 and refamiliarizing myself with C++. Due to the hands-off nature of SDL2, I had to implement many core parts of the game engine on my own. Some systems I implemented were an Entity Component System (ECS), a simple state machine, asset managers, and window management. These systems were made by wrapping the core SDL calls with much more usable classes. Despite the object oriented nature of the engine, the game itself doesn't suffer from a convoluted inheritance tree thanks to the ECS system.
+                </p>
+                <div>
+                {["cpp", "sdl", "cmake"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                </div>
+            </ContentBox>
+
             <ContentBox>
                 <h1>This Website</h1>
                 <p className="date">Summer 2022</p>
@@ -51,7 +68,7 @@ export default function Portfolio() {
                 that businesses could promote on the platform. I mainly contributed to this project through my work on the backend. The backend is built with Django and MySQL
                 and serves content to the app with a REST API. I also wrote the backend for the chat function using Django channels which is socket based with a Redis cache so that the chat
                 experience is responsive. The messages are regularly saved from the redis cache to the MySQL database so that messages which arrived when a user was not logged in are
-                still preserved. Due to rapidly approaching deadlines, I taught myself Flutter and Dart so that I could build a standalone chat application which was incorperated into
+                still preserved. Due to rapidly approaching deadlines, I taught myself Flutter and Dart so that I could build a standalone chat application which was incorporated into
                 the app as the chat tab by the frontend team. The backend was deployed to a cloud instance of Ubuntu 20.04.
                 </p>
                 <div>
@@ -68,7 +85,7 @@ export default function Portfolio() {
                 <p className="description">
                 This is a project I developed to practice what I had learned from CMPUT 301. The app was written in Java using the Android platform tools.
                 The server was a simple server written in python running on a Raspberry Pi that communicated over sockets to turn relays on and off. These relays 
-                were then wired into solenoid valves so that I could turn sprinkers on and off using the Android app. Were I to do this project again, I would <i>not</i> write it this way.
+                were then wired into solenoid valves so that I could turn sprinklers on and off using the Android app. Were I to do this project again, I would <i>not</i> write it this way.
                 I would instead communicate with some form of REST API since the sockets made the connection too fragile for a mobile app. As it was, the project was a success and allowed for
                 myself and my family to water the gardens from 200km away. 
                 </p>

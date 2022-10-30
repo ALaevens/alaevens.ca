@@ -2,8 +2,8 @@
 
 nav {
     display: block;
-    background-color: var(--primary);
-    border-bottom: 0.2em solid var(--primary-dark);
+    background-color: var(--nav-bg);
+    border-bottom: 2px solid var(--nav-border);
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,10 +12,14 @@ nav {
 }
 
 nav a {
+    /* background-color: var(--primary); */
     display: inline-block;
     padding: 0.8em 0.5em;
     color: var(--text-light);
     text-decoration: none;
+    margin-left: 1em;
+    border-left: 2px solid var(--primary-dark);
+    border-right: 2px solid var(--primary-dark);
 }
 
 nav a:hover {
@@ -31,14 +35,6 @@ nav a.active {
     
 }
 
-nav h5 {
-    display: inline;
-    padding: 0.8em 0.5em; 
-    font-weight: bold;
-    color: var(--text-light);
-    text-shadow: 0.1em 0.1em black;
-}
-
 .vl {
     display: inline-block;
     border-left: 4px solid var(--primary-dark);
@@ -48,17 +44,12 @@ nav h5 {
 }
 
 @media only screen and (max-width: 600px) {
-    nav h5 {
-        display: none;
+    nav a {
+        margin: 0 0;
+        border: none;
     }
-}
 
-@media only screen and (min-width: 600px) {
-    nav a:hover:not(.active)::before {
-        content: "./";
-    }
-    
-    nav a:hover:not(.active)::after {
-        content: ".sh";
+    nav a:not(:last-of-type) {
+        border-right: 2px solid var(--primary-dark);
     }
 }
