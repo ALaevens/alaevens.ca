@@ -1,6 +1,6 @@
 import "./About.css";
 import { datesArrToString } from "../../util/StringFormats";
-import {work, education, skills} from "./content.js";
+import {work, education} from "./content.js";
 import AccordionDiv from "../../components/AccordionDiv/AccordionDiv";
 import IconEntry from "../../components/IconEntry/IconEntry";
 import ContentBox from "../../components/ContentBox/ContentBox";
@@ -69,7 +69,7 @@ export default function About() {
                 })}
             </ContentBox>
 
-            <ContentBox className="hardSkillCard">
+            {/* <ContentBox className="hardSkillCard">
                 <h1>Technical Skills</h1>
                 <hr />
                 {skills.map(skillGroup => {
@@ -79,6 +79,37 @@ export default function About() {
                         </AccordionDiv>
                     );
                 })}
+            </ContentBox> */}
+
+            <ContentBox className="hardSkillCard">
+                <h1>Technical Skills</h1>
+                <hr />
+                <AccordionDiv title="Programming">
+                    <ul>
+                        <li>Proficient with languages such as Python, C++, and Java, and working knowledge of JavaScript/TypeScript, HTML, and CSS</li>
+                        <li>Proficient with frameworks/libraries such as Django, Django Rest Framework, NumPy, and Flutter with working knowledge of ReactJS and Redux</li>
+                        <li>Working knowledge of interfacing with relational databases (SQLite, MySQL) from Python and C, and interfacing with NoSQL databases such as Redis and Google Firebase</li>
+                    </ul>
+                </AccordionDiv>
+                <AccordionDiv title="Hardware">
+                    <ul>
+                        <li>Experience disassembling and repairing laptops</li>
+                        <li>Experience building personal computers and installing hardware</li>
+                        <li>Controlling electronics with Raspberry Pi and Arduino devices</li>
+                    </ul>
+                </AccordionDiv>
+                <AccordionDiv title="Software">
+                    <ul>
+                        <li>Proficient with Git, GitHub, Postman, Microsoft Visual Studio and Visual Studio Code, IntelliJ family IDEs including Android Studio, and the Microsoft Office suite/google equivalents</li>
+                        <li>Working knowledge of Nginx, Docker, PyTest, JUnit, GDB, Valgrind, and Swagger API documentation</li>
+                    </ul>
+                </AccordionDiv>
+                <AccordionDiv title="Networking">
+                    <ul>
+                        <li>Experience writing applications utilizing communication over Unix-style sockets, web sockets, HTTP (REST APIs), and serial</li>
+                        <li>Experience with setting up an Ubuntu web server from scratch including managing DNS, firewalls, SSL certifications, and port forwarding</li>
+                    </ul>
+                </AccordionDiv>
             </ContentBox>
 
             <ContentBox className="softSkillCard">

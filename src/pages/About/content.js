@@ -9,7 +9,7 @@ export const education = [
         title: "University of Alberta",
         location: "Edmonton, AB",
         dates: ["September 2018", "June 2022"],
-        description: "Graduated with a BSc Honours in Computing Science",
+        description: "Graduated with a BSc Honours in Computing Science. Additional focus on Math, Economics, and Earth Sciences",
         image: ualberta,
         hiddenList: {
             title: "Key Courses",
@@ -37,9 +37,14 @@ export const work = [
         title: "Backend Programmer",
         location: "CMPUT 401 - LaTandao App",
         dates: ["January 2022", "April 2022"],
-        description: "Worked with a team of four others to build an app for local Edmonton community group 'La Connexional'. " + 
-                     "While CMPUT 401 is a credited university course, The client was real and so is the final product.",
-        list: ["Database setup", "REST API in Django", "User Authentication", "Team scrum master"],
+        description: "Worked with a team of four others to build an app for local Edmonton community group 'La Connexional'.",
+        list: [
+            "Built a REST API with Django and MySQL", 
+            "Implemented user authentication with tokens and OAuth2", 
+            "Coordinated team meetings as the group's scrum master", 
+            "Used docker and docker-compose to create a modular system the client would be able to easily deploy",
+            "Deployed working builds to CyberaRAC an Alberta based cloud computing service"
+        ],
         image: latandao
     },
     {
@@ -47,10 +52,10 @@ export const work = [
         location: "Municipality of Red Lake",
         dates: ["May", "August 2019", "June", "August 2020", "May", "August 2021"],
         list:   [
-                    "Using power equipment to maintain municipal greenspace in a safe and efficient manner",
-                    "Planning the daily schedule and making sure the crew has all the required equipment",
-                    "Helping with community events",
-                    "Training new employees on safe operation of the equipment"
+                    "Used power equipment to maintain municipal greenspace in a safe and efficient manner",
+                    "Planned the daily schedule and made sure the crew has all the required equipment after being told our daily goals",
+                    "Assisted with community events such as Norseman Days",
+                    "Trained new employees on safe operating procedures"
                 ],
         image: town
     },
@@ -58,7 +63,7 @@ export const work = [
         title: "Grocery Worker",
         location: "Red Lake IGA",
         dates: ["November 2015", "August 2018"],
-        list: ["Filling and facing shelves", "Packing groceries", "Assisting customers", "Training new employees"],
+        list: ["Maintained and organized stock on the shelves and in the warehouse", "Packed large grocery orders", "Assisted customers", "Trained new employees"],
         image: iga
     },
 ]

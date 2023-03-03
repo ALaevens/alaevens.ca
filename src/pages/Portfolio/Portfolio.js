@@ -20,16 +20,30 @@ const icons = {
     cpp: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
     sdl: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sdl/sdl-plain.svg",
     cmake: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg",
+    sqlite: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
 };
 
 export default function Portfolio() {
     return (
         <div>
             <ContentBox>
+                <h1>Shopping List App</h1>
+                <p className="date">Fall 2022</p>
+                <hr/>
+                <a href="https://github.com/ALaevens/OneTrip">Source (GitHub)</a>
+                <p className="description">
+                On a couple occasions in the months leading up to this project I found myself needing to return to the grocery store to buy items for recipes that I had missed writing down. I decided to make an app which will help prevent me from making this mistake again. This app allows users to add recipes as simple collections of ingredients which can then be imported directly into a shopping list. The user can swipe away items they already have before they leave and check off the items they have purchased while at the store. I also added functionality where users can join user groups to allow a household to share the same recipe pool and ongoing shopping list which will update in real time. Since the app is built on top of a rest API, the real time updates are handled by broadcasting a hash of the updated shopping list over a websocket and any connected users in the household group will automatically perform a get request on the new data if their hash does not match.
+                </p>
+                <div>
+                {["python", "django", "sqlite", "redis", "nginx", "ubuntu", "flutter"].map(lang => <img className="langIcon" src={icons[lang]} alt={lang} />)}
+                </div>
+            </ContentBox>
+
+            <ContentBox>
                 <h1>Cannon Game</h1>
                 <p className="date">Fall 2022</p>
                 <hr />
-                <a href="https://github.com/ALaevens/Cannon-Game-SDL2">Source (GitHub)</a>
+                <a href="https://github.com/ALaevens/Cannon-Game-SDL2">Source + Pictures (GitHub)</a>
                 <a href="https://github.com/ALaevens/Cannon-Game-SDL2/releases">Download Executable</a>
                 <p className="description">
                 I started this project as an opportunity to learn about SDL2, which is a C++ graphics library I have been interested in for quite some time. The game itself is a remake of a game I made in high school using Pygame. Remaking a game instead of trying to make a new one allowed me to focus fully on working with SDL2 and refamiliarizing myself with C++. Due to the hands-off nature of SDL2, I had to implement many core parts of the game engine on my own. Some systems I implemented were an Entity Component System (ECS), a simple state machine, asset managers, and window management. These systems were made by wrapping the core SDL calls with much more usable classes. Despite the object oriented nature of the engine, the game itself doesn't suffer from a convoluted inheritance tree thanks to the ECS system.
