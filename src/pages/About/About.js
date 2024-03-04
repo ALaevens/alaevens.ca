@@ -6,6 +6,16 @@ import IconEntry from "../../components/IconEntry/IconEntry";
 import ContentBox from "../../components/ContentBox/ContentBox";
 import MediaLink from "../../components/MediaLink/MediaLink";
 
+function buildList(list) {
+    return <ul>{list.map(row => {
+        if (typeof row == 'string') {
+            return <li>{row}</li>
+        } else {
+            return <ul>{buildList(row)}</ul>
+        }
+    })}</ul>
+}
+
 function DatedEntry(props) {
     const {title, location, dates, description, list, hiddenList} = props.data;
 
@@ -15,7 +25,8 @@ function DatedEntry(props) {
             <h4 className="moveOver">{location}</h4>
             <p className="date">{datesArrToString(dates)}</p>
             {description && <p>{description}</p>}
-            {list && <ul>{list.map(duty => <li>{duty}</li>)}</ul>}
+            {/* {list && <ul>{list.map(duty => <li>{duty}</li>)}</ul>} */}
+            {list && buildList(list)}
             {hiddenList && <AccordionDiv title={hiddenList.title}>
             <ul>
                 {hiddenList.content.map(entry => <li><strong>{entry.heading}: </strong>{entry.details}</li>)}

@@ -3,6 +3,7 @@ import rldhs from "./images/rldhs.png";
 import town from "./images/town.png";
 import iga from "./images/iga.png";
 import latandao from "./images/latandao.png";
+import evolution from "./images/evolution.png";
 
 export const education = [
     {
@@ -33,6 +34,38 @@ export const education = [
 ];
 
 export const work = [
+    {
+        title: "Vacation Student - IT",
+        location: "Evolution Mining Red Lake Operations",
+        dates: ["May 2023", "August 2023"],
+        list: [
+            "Hardware:",
+            [
+                "Refurbished Lenovo, Microsoft Surface, and HP Desktop and Laptop computers",
+                "Troubleshooted issues with various peripherals and laptop docks"
+            ],
+            "Software:",
+            [
+                "Used SCCM for Windows deployment and software management",
+                "Microsoft Account Management through Active Directory, Entra (Formerly Azure AD), and Exchange Server",
+                "Installed and provided basic support for software in use on site (Deswik, Leapfrog, Foxit PDF, etc)",
+            ],
+            "Networking:",
+            [
+                "Managed Cisco IP phones with Cisco Unified Connection Manager and Cisco Unity",
+                "Configured Cisco switches of various models",
+                "Diagnosed Cat6 and fiber optic cable connection issues"
+            ],
+            "Special Projects Completed:",
+            [
+                "An IT inventory management solution with Microsoft PowerApps and SQL Server",
+                "PowerShell and WinForms GUI to copy Active Directory group memberships which greatly simplified the account creation process",
+                "PowerShell with WinForms GUI application to clear obsolete computer profiles off of network computers remotely",
+                "Python with Tkinter GUI application to generate ready to use Cisco Network switch configuration files"
+            ]
+        ],
+        image: evolution
+    },
     {
         title: "Backend Programmer",
         location: "CMPUT 401 - LaTandao App",
